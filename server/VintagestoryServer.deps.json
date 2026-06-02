@@ -1,12 +1,12 @@
 {
   "runtimeTarget": {
-    "name": ".NETCoreApp,Version=v10.0/linux-arm64",
+    "name": ".NETCoreApp,Version=v10.0/linux-x64",
     "signature": ""
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v10.0": {},
-    ".NETCoreApp,Version=v10.0/linux-arm64": {
+    ".NETCoreApp,Version=v10.0/linux-x64": {
       "VintagestoryServer/1.0.0": {
         "dependencies": {
           "SkiaSharp.NativeAssets.Linux.NoDependencies": "3.119.1",
@@ -16,7 +16,7 @@
           "VintageStory.Native.Linux": "1.0.5",
           "VintagestoryLib": "1.0.0",
           "cairo-sharp.Reference": "1.0.0.0",
-          "VSEssentials.Reference": "1.0.0.0"
+          "VSEssentials.Reference": "1.22.3.0"
         },
         "runtime": {
           "VintagestoryServer.dll": {}
@@ -174,7 +174,7 @@
         "runtime": {
           "lib/net8.0/MonoMod.ILHelpers.dll": {
             "assemblyVersion": "1.1.0.0",
-            "fileVersion": "1.1.0.0"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -276,6 +276,13 @@
           }
         }
       },
+      "OpenTK.redist.glfw/3.4.0.44": {
+        "native": {
+          "runtimes/linux-x64/native/libglfw.so.3": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
       "OpenTK.Windowing.Common/4.9.4": {
         "dependencies": {
           "OpenTK.Core": "4.9.4",
@@ -304,7 +311,8 @@
       },
       "OpenTK.Windowing.GraphicsLibraryFramework/4.9.4": {
         "dependencies": {
-          "OpenTK.Core": "4.9.4"
+          "OpenTK.Core": "4.9.4",
+          "OpenTK.redist.glfw": "3.4.0.44"
         },
         "runtime": {
           "lib/netcoreapp3.1/OpenTK.Windowing.GraphicsLibraryFramework.dll": {
@@ -362,7 +370,7 @@
       },
       "SkiaSharp.NativeAssets.Linux.NoDependencies/3.119.1": {
         "native": {
-          "runtimes/linux-arm64/native/libSkiaSharp.so": {
+          "runtimes/linux-x64/native/libSkiaSharp.so": {
             "fileVersion": "0.0.0.0"
           }
         }
@@ -389,7 +397,7 @@
       },
       "SQLitePCLRaw.lib.e_sqlite3/2.1.11": {
         "native": {
-          "runtimes/linux-arm64/native/libe_sqlite3.so": {
+          "runtimes/linux-x64/native/libe_sqlite3.so": {
             "fileVersion": "0.0.0.0"
           }
         }
@@ -452,10 +460,13 @@
       },
       "VintageStory.Native.Linux/1.0.5": {
         "native": {
-          "runtimes/linux-arm64/native/libnanosvg.so": {
+          "runtimes/linux-x64/native/libnanosvg.so": {
             "fileVersion": "0.0.0.0"
           },
-          "runtimes/linux-arm64/native/libzstd.so": {
+          "runtimes/linux-x64/native/libopenal.so.1": {
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libzstd.so": {
             "fileVersion": "0.0.0.0"
           }
         }
@@ -482,8 +493,8 @@
         },
         "runtime": {
           "VintagestoryAPI.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.21.0.0"
+            "assemblyVersion": "1.22.3.0",
+            "fileVersion": "1.22.0.0"
           }
         }
       },
@@ -509,8 +520,8 @@
         },
         "runtime": {
           "VintagestoryLib.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.22.0.0"
+            "assemblyVersion": "1.22.3.0",
+            "fileVersion": "1.22.3.0"
           }
         }
       },
@@ -524,8 +535,8 @@
         },
         "runtime": {
           "VSCreativeMod.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.22.0.0"
+            "assemblyVersion": "1.22.3.0",
+            "fileVersion": "1.22.3.0"
           }
         }
       },
@@ -559,8 +570,8 @@
         },
         "runtime": {
           "VSSurvivalMod.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.22.0.0"
+            "assemblyVersion": "1.22.3.0",
+            "fileVersion": "1.22.3.0"
           }
         }
       },
@@ -586,11 +597,11 @@
           }
         }
       },
-      "VSEssentials.Reference/1.0.0.0": {
+      "VSEssentials.Reference/1.22.3.0": {
         "runtime": {
           "VSEssentials.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.22.0.0"
+            "assemblyVersion": "1.22.3.0",
+            "fileVersion": "1.22.3.0"
           }
         }
       },
@@ -598,7 +609,7 @@
         "runtime": {
           "csvorbis.dll": {
             "assemblyVersion": "1.0.4143.14181",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "1.0.4143.14181"
           }
         }
       },
@@ -606,7 +617,7 @@
         "runtime": {
           "csogg.dll": {
             "assemblyVersion": "1.0.4143.14181",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "1.0.4143.14181"
           }
         }
       }
@@ -793,6 +804,13 @@
       "path": "opentk.mathematics/4.9.4",
       "hashPath": "opentk.mathematics.4.9.4.nupkg.sha512"
     },
+    "OpenTK.redist.glfw/3.4.0.44": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HEjbdk0wWxSRrXHl3DSmrA8trecndgJpAHHloJJ1vPseNfeu/ynmrH/LturU1KguRn4r3IzZ81UIp5xRjnyahg==",
+      "path": "opentk.redist.glfw/3.4.0.44",
+      "hashPath": "opentk.redist.glfw.3.4.0.44.nupkg.sha512"
+    },
     "OpenTK.Windowing.Common/4.9.4": {
       "type": "package",
       "serviceable": true,
@@ -959,7 +977,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "VSEssentials.Reference/1.0.0.0": {
+    "VSEssentials.Reference/1.22.3.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
